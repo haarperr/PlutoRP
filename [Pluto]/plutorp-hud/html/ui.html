@@ -1,0 +1,127 @@
+<html>
+
+<head>
+
+    <!--Needed for vehicle hud-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--end lines needed for vehicle hud-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e4d3bd0601.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="IconContainer">
+            <div id="VoiceIndicator" class="BaseCircle">
+                <div class="circlebg">
+                <i id="VoiceIcon" class="fas fa-microphone"></i>
+                </div>
+            </div>
+            <div id="HealthIndicator" class="BaseCircle">
+                <div class="circlebg">
+                <i id="Health_Icon" class="fas fa-heart"></i>
+            </div>
+            </div>
+            <div id="ArmorIndicator" class="BaseCircle">
+                <div class="circlebg">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            </div>
+            <div id="HungerIndicator" class="BaseCircle">
+                <div class="circlebg">
+                <i id="Hunger_Icon" class="fas fa-hamburger"></i>
+            </div>
+            </div>
+            <div id="ThirstIndicator" class="BaseCircle">
+                <div class="circlebg">
+                <i id="Thirst_Icon" class="fas fa-tint"></i>
+            </div>
+            </div>
+            <div id="OxygenIndicator" class="BaseCircle">
+                <div class="circlebg">
+                <i id="HungerIcon" class="fas fa-lungs"></i>
+            </div>
+            </div>
+            <div id="StressIndicator" class="BaseCircle">
+                <div class="circlebg">
+                <i id="Stress_Icon" class="fas fa-brain"></i>
+            </div>
+            </div>
+    
+            <div id="DevMode" class="BaseCircle">
+                <div class="circlebg">
+                <i id="DevMode" class="fas fa-terminal"></i>
+            </div>
+            </div>
+            <div id="DebugMode" class="BaseCircle">
+                <div class="circlebg">
+                <i id="DebugMode" class="fas fa-bug"></i>
+            </div>
+            </div>
+        </div>
+
+        <!---vehicle hud start-->
+        <div id="Vehiclehud" class="Vehicle_hud">
+            <div id="VehHud" class="Veh_Hud">
+                <div class="speedometerPost">
+                    <svg width="75" height="75" class="speedSVG">
+                        <circle id="SpeedGauge" class="backgroundCircle" stroke="#FFFFFF" stroke-width="5.4" style="stroke-opacity: 0.5;" fill="transparent" r="25" cx="38" cy="39" stroke-dasharray="77 53" stroke-dashoffset="0"/>
+                        <circle id="SpeedMeter" class="progress2 Speed_Meter" stroke="white" stroke-width="5.4" style="stroke-opacity: 1;" fill="transparent" r="25" cx="37" cy="39" stroke-dasharray="77 53" stroke-dashoffset="0"/>
+                    </svg>
+                    <div id="SpeedMeter" class="Speed_Meter">300</div>
+                    <div id="mph" class="mph">MPH</div>
+                </div>
+                <div class="fuel">
+                    <svg id="GasGauge" class="circle" width="40" height="40">
+                    <circle class="backgroundCircle" stroke="#FFFFFF" stroke-width="3" style="stroke-opacity: 0.5;" fill="transparent" r="12" cx="20" cy="20" stroke-dasharray="46 20" stroke-dashoffset="0"/>
+                    <circle class="progress Gas_gauge" stroke="white" stroke-width="3" style="stroke-opacity: 1;" fill="transparent" r="12" cx="20" cy="20" stroke-dasharray="46 20" stroke-dashoffset="0"/>
+                    </svg>
+                    <div id="GasIcon" class="Gas_Icon"><i class="fas fa-gas-pump"></i></div>
+                </div>
+                <!-- <div id="NosGauge" class="Nos_Gauge"></div>
+                <div id="Noslabel" class="Nos_Label"><i class="fas fa-wine-bottle"></i></div> -->
+                <div id="SeatbeltIcon" class="Seatbelt_Icon">
+                    <i id="Seatbelt_Icon2" class="fak fa-logic-seatbelt"></i>
+                </div>
+                <div id="checkengineIcon" class="Check_Engine_Icon">
+                    <i id="checkengine" class="fas fa-engine-warning"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="streetwrapper" class="street_wrapper">
+        <div id="StreetsContainer" class="Streets_Container">
+            <div id="compass" class="compass">
+                <div class="direction">
+                    <div class="image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="street1_wrapper">
+        <div class="street1_container">
+            <div id="Street1" class="Street_1">Del perrio</div>
+        </div>
+
+    </div>
+    <div class="street2_wrapper">
+        <div class="street2_container">
+            <div id="Street2" class="Street_2">adam's apple</div>
+        </div>
+    </div>
+    <div class="inditicator_wrapper">
+        <div class="indicator_container">
+            <div id="compassindicator" class="compass_indicator"><img src="indicator.png"></div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/0.6.1/progressbar.min.js" integrity="sha512-7IoDEsIJGxz/gNyJY/0LRtS45wDSvPFXGPuC7Fo4YueWMNOmWKMAllEqo2Im3pgOjeEwsOoieyliRgdkZnY0ow==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

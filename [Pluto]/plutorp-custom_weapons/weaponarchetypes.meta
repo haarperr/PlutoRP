@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+  <InitDatas>
+	
+	<!-- Handguns -->
+	<!-- DP9 -->
+		
+	<Item>
+		<modelName>w_pi_dp9</modelName>
+		<txdName>w_pi_dp9</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	<Item>
+		<modelName>w_pi_dp9_mag1</modelName>
+		<txdName>w_pi_dp9_mag1</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	<Item>
+		<modelName>w_pi_dp9_mag2</modelName>
+		<txdName>w_pi_dp9_mag2</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	
+	<!-- BROWNING -->
+	
+	<Item>
+		<modelName>w_pi_browning</modelName>
+		<txdName>w_pi_browning</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	<Item>
+		<modelName>w_pi_browning_mag1</modelName>
+		<txdName>w_pi_browning_mag1</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	<Item>
+		<modelName>w_pi_browning_mag2</modelName>
+		<txdName>w_pi_browning_mag2</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	
+	<!-- Shotguns -->
+	<!-- LTL -->
+	
+	<Item>
+		<modelName>w_sg_ltl</modelName>
+		<txdName>w_sg_ltl</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	
+	<Item>
+		<modelName>w_am_staff</modelName>
+		<txdName>w_am_staff</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	<Item>
+		<modelName>w_pi_bolt</modelName>
+		<txdName>w_pi_bolt</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	
+  </InitDatas>
+</CWeaponModelInfo__InitDataList>

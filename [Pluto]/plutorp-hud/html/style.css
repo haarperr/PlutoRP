@@ -1,0 +1,542 @@
+body {
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.7px;
+    background-image: URL("gtabg.png");
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.IconContainer {
+    position: absolute;
+    bottom: 0.1vh;
+    left: 0.3vh;
+}
+
+.BaseCircle {
+    position: relative;
+    width: 4.5vh !important;
+    height: 4.5vh !important;
+    float: left;
+    margin: 0.35vh;
+    border-radius: 50%;
+}
+
+.circlebg {
+    position:absolute;
+    width: 3.36vh;
+    height: 3.35vh;
+    left: .32vw;
+    top: .60vh;
+    background: #2C2B2C;
+    border-radius: 50%
+    
+}
+
+.fa-heart {
+    color: white;
+    position: absolute;
+    font-size: 1.75vh;
+    left: .8vh;
+    bottom: .75vh;
+}
+
+/* Speed shit */
+
+.speedamount {
+    position: relative;
+    bottom: 100%;
+    font-size: 15;
+    text-align: center;
+    margin-right: 1540px;
+}
+
+.speedamount .stat {
+    background: linear-gradient(to top, #5b5b5b 90%, #1bd295 90%);
+    text-align: right;
+}
+
+.speedamount .stat span {
+    white-space: nowrap;
+    right: 20px;
+}
+
+.progress {
+    -webkit-transition: 0.35s stroke-dashoffset;
+    -o-transition: 0.35s stroke-dashoffset;
+    transition: 0.35s stroke-dashoffset;
+    -webkit-transform: rotate(140deg);
+    -ms-transform: rotate(140deg);
+    transform: rotate(140deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.progress2 {
+    -webkit-transition: 0.35s stroke-dashoffset;
+    -o-transition: 0.35s stroke-dashoffset;
+    transition: 0.35s stroke-dashoffset;
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.backgroundCircle,
+.outer {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+/*  */
+
+
+.fa-shield-alt {
+    color: white;
+    position: absolute;
+    font-size: 1.75vh;
+    left: .78vh;
+    bottom: .8vh;
+}
+
+.fa-hamburger {
+    color: white;
+    position: absolute;
+    font-size: 1.75vh;
+    left: .77vh;
+    bottom: .88vh;
+}
+
+.fa-skull {
+    color: white;
+    position: absolute;
+    font-size: 1.75vh;
+    left: .76vh;
+    bottom: .8vh;
+}
+
+.fa-brain{
+    color: white;
+    position: absolute;
+    font-size: 1.75vh;
+    left: 0.39vw;
+    bottom: .8vh;
+}
+
+.fa-headset {
+    color: white;
+    position: absolute;
+    font-size: 1.75vh;
+    left: 0.45vw;
+    bottom: .9vh;
+}
+
+.fa-lungs {
+    color: white;
+    position: absolute;
+    font-size: 1.55vh;
+    left: 0.45vw;
+    bottom: .95vh;
+}
+
+.fa-user-alt-slash {
+    color: white;
+    position: absolute;
+    font-size: 1.55vh;
+    left: 0.45vw;
+    bottom: .95vh;
+}
+
+
+.fa-terminal {
+    color: white;
+    position: absolute;
+    font-size: 1.55vh;
+    left: 0.45vw;
+    bottom: .95vh;
+}
+
+.fa-bug {
+    color: white;
+    position: absolute;
+    font-size: 1.55vh;
+    left: 0.45vw;
+    bottom: .95vh;
+}
+
+.fa-tint {
+    color: white;
+    position: absolute;
+    font-size: 1.75vh;
+    left: 0.65vw;
+    bottom: .85vh;
+}
+
+.fa-microphone {
+    color: white;
+    position: absolute;
+    font-size: 1.75vh;
+    left: 0.6vw;
+    bottom: .85vh;
+}
+
+#SpeedCircle {
+    width: 5vh !important;
+    height: 5vh !important;
+    position: absolute;
+    font-size: 5vh;
+    left: 22.8vh;
+    bottom: 5.6vh;
+    background: rgba(27, 27, 27, 0.336);
+    transform: rotate(-180deg);
+}
+
+#SpeedIndicator {
+    color: white;
+    position: inherit;
+    z-index: 1000;
+    left: 1vh;
+    top: 0.1vh;
+    width: 3vh;
+    font-size: 2vh;
+    text-align: center;
+    text-shadow: 0.2vh 0.2vh 0vh rgb(22, 22, 22);
+    transform: rotate(-180deg);
+}
+
+.fuel {
+    position: absolute;
+    bottom: 5.25vh;
+    left: 15.4vw;
+}
+
+
+#FuelCircle {
+    width: 3vh !important;
+    height: 3vh !important;
+    position: absolute;
+    left: 20.4vh;
+    bottom: 4.2vh;
+    background: rgba(27, 27, 27, 0.336);
+    transform: rotate(-180deg);
+}
+
+.engineGood {
+    color: #235157;
+}
+
+.engineBad {
+    color: red;
+}
+
+
+.flash {
+    color: red;
+}
+
+.noflashseatbelt {
+    color: rgb(42, 93, 93, 1);
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*Begin Vehicle Hud CSS*/
+
+.Vehicle_hud {
+    width: 100vw;
+    height: 100vh;
+}
+
+.Veh_Hud {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#SpeedGauge {
+    position: relative;
+    width: 5.1vw;
+    height: 2vh;
+    margin-top: 20px;
+    margin-right: -10px;
+    filter: drop-shadow(0px 0px 5px black);
+    
+}
+
+.speedSVG {
+    position: absolute;
+    bottom: 5vh;
+    left: 13vw;
+}
+
+.speedometerPost {
+    position: absolute;
+    bottom: 0.1vh;
+    left: 0.1vw;
+}
+
+.Speed_Meter {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 35.069vw;
+    top: 40.75vh;
+    font-size: 1.5vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vh;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.mph {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vh;
+    font-weight: bold;
+    color: white;
+    height: 1.0vh;
+    bottom: 7.4vh;
+    left: 14.37vw;
+}
+
+p{
+    text-align:center;
+}
+
+p span {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+.Gas_gauge {
+    position: absolute;
+    bottom: 1vh;
+    width: 2.5vw;
+    height: 1vh;
+    filter: drop-shadow(0px 0px 5px black)
+}
+
+.Gas_Icon {
+    position: absolute;
+    bottom: 1.30vh;
+    left: 0.75vw;
+    font-size: 0.1vh;
+    color: white;
+    filter: drop-shadow(0px 0px 5px black)
+}
+
+/* .Nos_Gauge {
+    position: absolute;
+    left: 12vw;
+    bottom: 23.5vh;
+    width: 2.5vw;
+    height: 1vh;
+    margin-right: -20px;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+.Nos_Label {
+    position: absolute;
+    left: 11vw;
+    bottom: 24vh;
+    color: white;
+    height: 1vh;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+} */
+
+.Seatbelt_Icon {
+    position: absolute;
+    color: white;
+    left: 17.5vw    ;
+    bottom: 9vh;
+    font-size: 1.95vh;
+    height: 1vh;
+    filter: drop-shadow(0px 0px 5px black)
+}
+
+.Check_Engine_Icon {
+    position: absolute;
+    color: white;
+    left: 19vw    ;
+    bottom: 9vh;
+    font-size: 1.95vh;
+    height: 1vh;
+    filter: drop-shadow(0px 0px 5px black)
+}
+
+.fa-gas-pump {
+    color: white;
+    font-size: 1.1vh;
+}
+
+.fa-logic-seatbelt {
+    font-size: 1.9vh;
+}
+
+.fa-wine-bottle {
+    color: white;
+    font-size: 1.3vh;
+}
+
+
+/* Streets & Compass */
+
+.Street_Wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.Streets_Container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+}
+
+.Street_1 {
+    float: right;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vh;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+}
+
+.Street_2 {
+    float: left;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2vh;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+}
+
+.inditicator_wrapper {
+    position: absolute;
+    top: -12px;
+    left: 0px;
+    width: 100%;
+}
+
+.indicator_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.compass_indicator {
+    margin: auto;
+}
+
+.Compass {
+    width: 200px;
+    margin: auto;
+}
+
+.Street1_wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 44%;
+}
+
+.Street2_wrapper {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 44%;
+}
+
+
+/* Compass -------------------- */
+
+.lower {
+    margin-top: 53% !important;
+}
+
+.timelower {
+    padding-bottom: 0px !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.direction {
+    color: #111111;
+    background-color: rgba(226, 226, 226, 0);
+    /* border-radius: 5px; */
+    width: 200px;
+    height: 28px;
+    overflow: hidden;
+    float: left;
+}
+
+.direction>.image {
+    height: 100%;
+    background-position: center center;
+    background-size: 400px;
+    background-repeat: repeat-x;
+    width: 843.5%;
+    z-index: 1;
+    background-image: url('compass.png');
+}
+
+@media only screen and (min-width: 2560px) {
+    .mph {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9vh;
+        font-weight: bold;
+        color: white;
+        height: 1.0vh;
+        bottom: 6.50vh;
+        left: 14.00vw;  
+    }
+    .Speed_Meter {
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        right: 35.50vw;
+        top: 41.75vh;
+        font-size: 1.5vh;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4vh;
+        font-weight: bold;
+        text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    }
+}

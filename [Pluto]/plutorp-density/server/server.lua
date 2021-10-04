@@ -1,0 +1,5 @@
+-- RegisterNetEvent('erp:peds:rogue')
+-- AddEventHandler('erp:peds:rogue', function(toDelete)
+--   if toDelete == nil then return end
+--   TriggerClientEvent("erp:peds:rogue:delete", -1, toDelete)
+-- end)

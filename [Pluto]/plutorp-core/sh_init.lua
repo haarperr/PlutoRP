@@ -1,0 +1,1 @@
+MRP = MRP or {}
