@@ -1,0 +1,106 @@
+html {
+  overflow: hidden;
+  font-family:verdana;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700);
+
+.full-screen {
+  width: 100%;
+  height:100%;
+  top:1%;
+  display: flex;
+  align-items: center;
+}
+
+.Radio-Form {
+  padding-top:340px;
+  width:150px;
+  background-color:rgba(0,0,0,0);
+  background:transparent;
+  text-align:center;
+}
+.left {
+  float:left;
+}
+#power {
+  min-width:35px;
+  min-height:55px;
+  margin-left:105%;
+  margin-top:-40%;
+
+}
+#volumeUp {
+  min-width:40%;
+  min-height:60px;
+  margin-left:20%;
+  margin-top:10%;
+
+}
+#volumeDown {
+  min-width:45%;
+  min-height:60px;
+  margin-left:20%;
+  margin-top:3%;
+
+}
+
+#volumeUp:hover::before { 
+  content: attr(title); display: block; 
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:black;
+  padding:2px;
+}
+#volumeDown:hover::before { 
+  content: attr(title); display: block; 
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:black;
+  padding:2px;
+}
+
+#power:hover::before { 
+  content: attr(title); display: block; 
+  position:relative;
+  top:-20px;
+  font-size:12px;
+  color:white;
+  background-color:black;
+  padding:2px;
+}
+
+
+
+input {
+  background-color:rgba(0,0,0,0);
+  background:transparent;
+  text-align:center;
+  border:none; 
+  font-size:130%;
+  outline:0;
+  padding-left:17%;
+  margin-top:-75%;
+}
+ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.radio-container {
+  background-image: url("nui://radio/html/background.png");
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  width: 300px;
+  height: 610px;
+  border-radius: 10px;
+  margin-left:82%;
+  margin-top:23%;
+  opacity: 1;
+  overflow: hidden;
+  display: none;
+  z-index: 9999999;
+  padding-top:4%;
+  padding-left:5px;
+}

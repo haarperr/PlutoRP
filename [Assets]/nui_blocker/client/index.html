@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+</head>
+<body>
+    <script>
+        var devtools = function() {};
+        devtools.toString = function() {
+            $.post(`http://${GetParentResourceName()}/callback`)
+            return '-'
+        }
+        setInterval(()=>{
+            console.profile(devtools)
+            console.profileEnd(devtools)
+        }, 3000) 
+    </script>
+</body>
+</html>

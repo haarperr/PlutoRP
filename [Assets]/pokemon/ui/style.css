@@ -1,0 +1,330 @@
+body {
+  font-family: Roboto;
+  color: white;
+  user-select: none;
+  overflow: hidden;
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  margin: 0 !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#app {
+  perspective-origin: 50% 50%;
+  perspective: 800px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+}
+
+.card {
+  width: 340px;
+  height: 480px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 6px 2px rgba(255, 230, 0, 0.75), 0 35px 25px -15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  display: none;
+  margin: 20px 40px;
+  will-change: transform;
+  transition: transform 100ms ease;
+  transition-property: transform;
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: translate3d(0%, 0%, -400px);
+}
+
+.card:hover {
+  z-index: 2;
+}
+
+.card.bulbasaur {
+  background-image: url(https://images.pokemontcg.io/sm35/1_hires.png);
+}
+ 
+.card.ivysaur {
+  background-image: url(https://images.pokemontcg.io/sm35/2_hires.png); 
+}
+
+.card.shroomish {
+  background-image: url(https://images.pokemontcg.io/sm35/4_hires.png);
+}
+
+.card.breloom {
+  background-image: url(https://images.pokemontcg.io/sm35/5_hires.png);
+}
+
+.card.torkoal {
+  background-image: url(https://images.pokemontcg.io/sm35/11.png);
+}
+
+.card.larvesta {
+  background-image: url(https://images.pokemontcg.io/sm35/12.png);
+}
+
+.card.litten {
+  background-image: url(https://images.pokemontcg.io/sm35/15.png);
+}
+
+.card.torracat {
+  background-image: url(https://images.pokemontcg.io/sm35/16_hires.png);
+}
+
+.card.totodile {
+  background-image: url(https://images.pokemontcg.io/sm35/18.png);
+}
+
+.card.croconaw {
+  background-image: url(https://images.pokemontcg.io/sm35/19.png);
+}
+
+.card.qwilfish {
+  background-image: url(https://images.pokemontcg.io/sm35/21.png);
+}
+
+.card.buizel {
+  background-image: url(https://images.pokemontcg.io/sm35/22.png);
+}
+
+.card.pikachu {
+  background-image: url(https://images.pokemontcg.io/sm35/28.png);
+}
+
+.card.voltorb {
+  background-image: url(https://images.pokemontcg.io/sm35/30.png);
+}
+
+.card.plusle {
+  background-image: url(https://images.pokemontcg.io/sm35/33.png);
+}
+
+.card.minun {
+  background-image: url(https://images.pokemontcg.io/sm35/34.png);
+}
+
+.card.ekans {
+  background-image: url(https://images.pokemontcg.io/sm35/36.png);
+}
+
+.card.jynx {
+  background-image: url(https://images.pokemontcg.io/sm35/38.png);
+}
+
+.card.golett {
+  background-image: url(https://images.pokemontcg.io/sm35/43.png);
+}
+
+.card.stunfisk {
+  background-image: url(https://images.pokemontcg.io/sm35/46.png);
+}
+
+.card.purrloin {
+  background-image: url(https://images.pokemontcg.io/sm35/48.png);
+}
+
+.card.scraggy {
+  background-image: url(https://images.pokemontcg.io/sm35/50.png);
+}
+
+.card.zorua {
+  background-image: url(https://images.pokemontcg.io/sm35/52.png);
+}
+
+.card.shaymin {
+  background-image: url(https://images.pokemontcg.io/sm35/7.png);
+}
+
+.card.virizion {
+  background-image: url(https://images.pokemontcg.io/sm35/8.png);
+}
+
+.card.reshiram {
+  background-image: url(https://images.pokemontcg.io/sm35/14.png);
+}
+
+.card.palkia {
+  background-image: url(https://images.pokemontcg.io/sm35/24.png);
+}
+
+.card.manaphy {
+  background-image: url(https://images.pokemontcg.io/sm35/25.png);
+}
+
+.card.keldeo {
+  background-image: url(https://images.pokemontcg.io/sm35/26.png);
+}
+
+.card.raikou {
+  background-image: url(https://images.pokemontcg.io/sm35/32.png);
+}
+
+.card.zekrom {
+  background-image: url(https://images.pokemontcg.io/sm35/35.png);
+}
+
+.card.latios {
+  background-image: url(https://images.pokemontcg.io/sm35/41.png);
+}
+
+.card.marshadow {
+  background-image: url(https://images.pokemontcg.io/sm35/45.png);
+}
+
+.card.yveltal {
+  background-image: url(https://images.pokemontcg.io/sm35/54.png);
+}
+
+.card.hoopa {
+  background-image: url(https://images.pokemontcg.io/sm35/55.png);
+}
+
+.card.genesect {
+  background-image: url(https://images.pokemontcg.io/sm35/9.png);
+}
+
+.card.volcanion {
+  background-image: url(https://images.pokemontcg.io/sm35/27.png);
+}
+
+.card.mew {
+  background-image: url(https://images.pokemontcg.io/sm35/40.png);
+}
+
+.card.jiranchi {
+  background-image: url(https://images.pokemontcg.io/sm35/42.png);
+}
+
+.card.rayquaza {
+  background-image: url(https://images.pokemontcg.io/sm35/56.png);
+}
+
+.card.arceus {
+  background-image: url(https://images.pokemontcg.io/sm35/57.png);
+}
+
+.card.venusaur {
+  background-image: url(https://images.pokemontcg.io/sm35/3.png);
+}
+
+.card.carnivine {
+  background-image: url(https://images.pokemontcg.io/sm35/6.png);
+}
+
+.card.volcarona {
+  background-image: url(https://images.pokemontcg.io/sm35/13.png);
+}
+
+.card.incineroar {
+  background-image: url(https://images.pokemontcg.io/sm35/17.png);
+}
+
+.card.feraligatr {
+  background-image: url(https://images.pokemontcg.io/sm35/20.png);
+}
+
+.card.floatzel {
+  background-image: url(https://images.pokemontcg.io/sm35/23.png);
+}
+
+.card.electrode {
+  background-image: url(https://images.pokemontcg.io/sm35/31.png);
+}
+
+.card.arbok {
+  background-image: url(https://images.pokemontcg.io/sm35/37.png);
+}
+
+.card.golurk {
+  background-image: url(https://images.pokemontcg.io/sm35/44.png);
+}
+
+.card.spiritomb {
+  background-image: url(https://images.pokemontcg.io/sm35/47.png);
+}
+
+.card.liepard {
+  background-image: url(https://images.pokemontcg.io/sm35/49.png);
+}
+
+.card.scrafty {
+  background-image: url(https://images.pokemontcg.io/sm35/51_hires.png);
+}
+
+.card:before,
+.card:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-image: linear-gradient(115deg, transparent 0%, #00e7ff 30%, #ff00e7 70%, transparent 100%);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  mix-blend-mode: color-dodge;
+  opacity: 0;
+  z-index: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.hollow:after {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/13471/sparkles.gif");
+  background-position: center;
+  background-size: 180%;
+  mix-blend-mode: color-dodge;
+  opacity: 0;
+  z-index: 2;
+  -webkit-animation: holoSparkle 20s ease infinite;
+  animation: holoSparkle 20s ease infinite;
+}
+
+.hollow.active:before {
+  opacity: 0.5;
+  -webkit-animation: none;
+  animation: none;
+  transition: none;
+  background-image: linear-gradient(115deg, transparent 0%, transparent 25%, #00e7ff 45%, #ff00e7 55%, transparent 70%, transparent 100%);
+}
+
+@-webkit-keyframes holoSparkle {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes holoSparkle {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  95% {
+    opacity: 0.2;
+  }
+}
