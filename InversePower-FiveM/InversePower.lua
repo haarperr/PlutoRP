@@ -2,8 +2,8 @@ speed = 0.0;
 rel_vector = { 0.0, 0, 0.0, 0, 0.0, 0 };
 angle = 0.0;
 
-base = 35.0;
-power_adj = 1.0;
+base = 5.0;
+power_adj = 3.0;
 torque_adj = 1.0;
 angle_impact = 3.0;
 speed_impact = 2.0;
@@ -19,7 +19,7 @@ disablep = 0;
 disablet = 0;
 
 
-power_adj = 100.0
+power_adj = 300.0
 torque_adj = 80.0
 angle_impact = 350.0
 speed_impact = 200.0
