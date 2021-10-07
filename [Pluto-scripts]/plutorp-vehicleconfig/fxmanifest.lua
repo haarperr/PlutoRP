@@ -15,6 +15,10 @@ files {
   'audioconfig/sultanrsv8_sounds.dat54.rel',
   'sfx/dlc_v8sultanrs/v8sultanrs.awc',
   'sfx/dlc_v8sultanrs/v8sultanrs_npc.awc',
+  'audioconfig/hemisound_sounds.dat54.rel',
+  'audioconfig/hemisound_game.dat151.rel',
+  'sfx/dlc_hemisound/hemisound.awc',
+  'sfx/dlc_hemisound/hemisound_npc.awc',
   'audioconfig/sentinelsg4_game.dat151',
   'audioconfig/sentinelsg4_game.dat151.nametable',
   'audioconfig/sentinelsg4_game.dat151.rel',
@@ -174,6 +178,9 @@ data_file 'AUDIO_WAVEPACK' 'sfx/dlc_roger'
 data_file 'AUDIO_GAMEDATA' 'audioconfig/r34sound_game.dat'
 data_file 'AUDIO_SOUNDDATA' 'audioconfig/r34sound_sounds.dat'
 data_file 'AUDIO_WAVEPACK' 'sfx/dlc_r34sound'
+data_file 'AUDIO_GAMEDATA' 'audioconfig/hemisound_game.dat'
+data_file 'AUDIO_SOUNDDATA' 'audioconfig/hemisound_sounds.dat'
+data_file 'AUDIO_WAVEPACK' 'sfx/dlc_hemisound'
 
 
 client_script 'vehicle_names.lua'
