@@ -2037,6 +2037,7 @@ RegisterNUICallback('racing:events:list', function()
     end
 end)
 
+
 RegisterNUICallback('racing:events:highscore', function()
   TriggerServerEvent("racing-retreive-maps")
   Wait(300)
